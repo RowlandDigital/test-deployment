@@ -1,48 +1,41 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+#######
+# IDE #
+#######
+#PHP storm
+.idea/*
+# NEtbeans
+/nbproject/*
+#Vs
+.vscode/*
+*.vsix
+.history
+.vs
 
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
+#####################
+# MAC Filesystem #
+#####################
+.DS_Store
+__MACOSX
 
-# Configuration
-wp-config.php
-
-# Example themes
-/wp-content/themes/twenty*/
-
-# Example plugin
-/wp-content/plugins/hello.php
-
-# Uploads
-/wp-content/uploads/
-
-# Log files
+#####################
+# Additional files  #
+#####################
+*.sql
+*.zip
+*.gz
+*.rar
 *.log
 
-# htaccess
-/.htaccess
+# Wordpress - ignore core, configuration, examples, uploads and logs.
+!public_html/
+public_html/*
 
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
+#others
+node_modules
+/vendor
 
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+#includes
+!/public_html/wp-config.php
+!/public_html/wp-config-local-sample.php
+!/public_html/wp-config-pantheon.php
+
