@@ -27,15 +27,15 @@ __MACOSX
 *.log
 
 # Wordpress - ignore core, configuration, examples, uploads and logs.
-!public_html/
-public_html/*
+!web/
+web/*
 
 #others
 node_modules
 /vendor
 
 #includes
-!/public_html/wp-config.php
-!/public_html/wp-config-local-sample.php
-!/public_html/wp-config-pantheon.php
+!/web/wp-config.php
+!/web/wp-config-local-sample.php
+!/web/wp-config-pantheon.php
 
